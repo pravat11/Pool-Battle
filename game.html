@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<title>8-ball pool</title>
+
+	</head>
+	<body>
+		<div class="menus-container">
+			<a class="main-menu" href="index.html">Main menu</a>
+			<button class="green-button" id="new-game-button">New game</button>
+			<div class="shot-power-container">
+				<div class="shot-power">
+					<img id="power-meter"/>
+				</div>
+				<span class="power">Power</span>
+			</div>
+			<div class="players">
+				<div class="player1">
+					<img id="player1Indicator"/>
+					<span id="p1">Player 1</span>
+				</div>
+				<div class="player2">
+					<img id="player2Indicator"/>
+					<span id="p2">Player 2</span>
+				</div>
+			</div>
+			<button class="green-button" id="rules-button">Rules</button>
+		</div>
+		<div class="pool-image">
+		<img class="logo" src="images/logo.png" alt="logo"/>
+			<canvas id="myCanvas" width="1140px" height="605px">
+			</canvas>
+			
+			<span class="canvas-texts"></span>
+			<div class="pool-rules">
+				<button id="close-rules">X</button>
+				<h2>Game rules</h2>
+				<ul class="rules-category">
+					<li>
+						<span>Choosing a color</span>
+						<ul class="rules">
+							<li>Player that pots a first will get the potted colored ball and other player gets other colored ball.</li>
+						</ul>
+					</li>
+					<li>
+						<span>Foul criteria</span>
+						<ul class="rules">
+							<li>Potting cue ball</li>
+							<li>Potting the opponent color's ball</li>
+							<li>If cue ball fails to touch any ball</li>
+							<li>If cue ball first touches opponent color's ball</li>
+							<li>If cue ball first touches black ball and own colored balls are still in table</li>
+						</ul>						
+					</li>
+					<li>
+						<span>Game over criteria</span>
+						<ul class="rules">
+							<li>Potting a black ball after all the balls of own color have been potted wins the game for that player.</li>
+							<li>Potting a black ball if there are still balls of own color in table wins the game for opponent player.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/Ball.js"></script>
+	<script type="text/javascript" src="js/cue_stick.js"></script>
+	<script type="text/javascript" src="js/player.js"></script>
+		<script type="text/javascript" src="js/animate.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</html>
