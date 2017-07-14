@@ -2,7 +2,7 @@ var canvas;
 var ctx;
 var numberOfBalls=7;
 var poolTableImage;
-var friction=1;
+var friction=0.992;
 var animate;
 var p1,p2;
 var listener;
